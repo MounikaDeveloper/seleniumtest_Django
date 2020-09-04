@@ -16,7 +16,7 @@ class AccountTestCase(LiveServerTestCase):
     def test_showIndex(self):
         selenium = self.selenium
         #Opening the link we want to test
-        selenium.get('http://127.0.0.1:8000/index/')
+        selenium.get('https://seleniumtesting1.herokuapp.com/index/')
         #find the form element
         first_name = selenium.find_element_by_id('id_fname')
         last_name = selenium.find_element_by_id('id_lname')
